@@ -18,8 +18,7 @@ Laravel Blog is Laravel Blog sample application.
 
 <h2>User Login Credential</h2>
 <ul>
-    <li><strong>Admin:</strong> email and password; admin@laravel-blog.com</li>
-    <li><strong>Author:</strong> email; link2ismail@gmail.com | password: link2ismail</li>
+    <li><strong>Agent:</strong> email; link2ismail@gmail.com | password: link2ismail</li>
 </ul>
 
 <h2>Note:</h2>
