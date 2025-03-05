@@ -14,11 +14,7 @@ class UserRolePermissionSeeder extends Seeder
     public function run()
     {
         // Create permissions
-        $permissions = [
-            'list post', 'create post', 'edit post', 'delete post',
-            'list category', 'create category', 'edit category', 'delete category',
-            'list tag', 'create tag', 'edit tag', 'delete tag'
-        ];
+        $permissions = ['list customers', 'can login customer', 'view customer', 'guest'];
 
         foreach ($permissions as $permission) {
             Permission::create(['name' => $permission]);
@@ -26,12 +22,10 @@ class UserRolePermissionSeeder extends Seeder
 
         // Create roles
         $roles = [
-            'admin' => [
-                'list post', 'create post', 'edit post', 'delete post', 'list category', 'create category', 'edit category', 'delete category', 'list tag', 'create tag', 'edit tag', 'delete tag'
+            'agent'  => [
+                'list customers', 'can login customer', 'view customer', 'guest'
             ],
-            'author'  => [
-                'list post', 'create post', 'edit post', 'delete post', 'list category', 'create category', 'edit category', 'list tag', 'create tag', 'edit tag'
-            ],
+            'customer' => ['guest']
         ];
 
         foreach ($roles as $roleName => $rolePermissions) {

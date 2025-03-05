@@ -15,8 +15,6 @@ class HomeController extends Controller
     {
         $data = [
             'page_title'    => 'Home',
-            'latest_posts'  => Post::orderby('id', 'desc')->paginate(10),
-            'categories'    => Category::all(),
         ];
 
         return view('frontend.home.index', $data);

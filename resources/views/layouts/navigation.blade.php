@@ -97,21 +97,6 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{ route('categories.index') }}"
-                        class="nav-link {{ request()->segment(2) == 'categories' ? 'active' : '' }}">
-                        <i class="nav-icon fa fa-tag"></i>
-                        <p>Category</p>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="{{ route('tags.index') }}"
-                        class="nav-link {{ request()->segment(2) == 'tags' ? 'active' : '' }}">
-                        <i class="nav-icon fa fa-tags"></i>
-                        <p>Tags</p>
-                    </a>
-                </li>
-                <li class="nav-item">
                     <a href="{{ route('users.index') }}"
                         class="nav-link {{ request()->segment(2) == 'users' ? 'active' : '' }}">
                         <i class="nav-icon fa fa-user"></i>
